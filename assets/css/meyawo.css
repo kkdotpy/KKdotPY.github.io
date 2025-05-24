@@ -11186,7 +11186,7 @@ p {
   visibility: visible;
 }
 
-/*/ portfolio wrapper */
+/*/ portfolio wrapper 
 .portfolio-card {
   display: block;
   position: relative;
@@ -11241,6 +11241,79 @@ p {
   width: 100%;
   height: 100%;
   border-radius: 0;
+}
+
+@media (max-width: 767.98px) {
+  .portfolio-card {
+    margin-bottom: 30px;
+  }
+  .service-card {
+    margin-bottom: 30px;
+  }
+}*/
+/*/ portfolio wrapper */
+.portfolio-card {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-card .portfolio-card-img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-card-img {
+  transform: scale(1.05);
+}
+
+.portfolio-card .portfolio-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  padding: 20px;
+  text-align: left;
+  overflow-y: auto;
+  border-radius: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-card .portfolio-card-overlay {
+    transition: none;
+  }
+}
+
+.portfolio-card .portfolio-card-overlay .portfolio-card-caption {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  transform: none;
+  width: auto;
+}
+
+.portfolio-card .portfolio-card-overlay .portfolio-card-caption h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.portfolio-card .portfolio-card-overlay .portfolio-card-caption p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.portfolio-card:hover .portfolio-card-overlay {
+  opacity: 1;
+  visibility: visible;
 }
 
 @media (max-width: 767.98px) {
