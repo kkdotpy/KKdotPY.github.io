@@ -4,13 +4,28 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="[Your personal description]">
-    <meta name="author" content="[Your Name]">
-    <title>[Your Name] | Portfolio</title>
+    <meta name="description" content="Kapel Kharel - Data Science Portfolio">
+    <meta name="author" content="Kapel Kharel">
+    <title>Kapel Kharel | Data Science Portfolio</title>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="assets/css/meyawo.css">
+    <style>
+        .skill-icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+        }
+        .data-science-bg {
+            background-color: #f8f9fa;
+        }
+        .github-corner {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -18,7 +33,7 @@
     <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="#">[Your Name]</a>
+            <a class="logo" href="#">Kapel Kharel</a>
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="#home">Home</a>
@@ -27,7 +42,10 @@
                     <a class="link" href="#about">About</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#portfolio">Portfolio</a>
+                    <a class="link" href="#skills">Skills</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio">Projects</a>
                 </li>
                 <li class="item">
                     <a class="link" href="#contact">Contact</a>
@@ -39,184 +57,146 @@
                 </div>
             </a>
         </div>
-    </nav><!-- End of Page Navbar -->
+    </nav>
 
-    <!-- page header -->
+    <!-- Header Section -->
     <header id="home" class="header">
         <div class="overlay"></div>
         <div class="header-content container">
             <h1 class="header-title">
                 <span class="up">HI!</span>
-                <span class="down">I am [Your Name]</span>
+                <span class="down">I am Kapel Kharel</span>
             </h1>
-            <p class="header-subtitle">[Your Profession]</p>
-
-            <button class="btn btn-primary">View My Work</button>
+            <p class="header-subtitle">DATA SCIENCE STUDENT</p>
+            <p class="header-quote">"Beyond the numbers lies a hidden story, and I'm on a mission to uncover it!"</p>
+            <button class="btn btn-primary mt-3" onclick="window.location.href='#portfolio'">View My Projects</button>
         </div>
-    </header><!-- end of page header -->
+    </header>
 
-    <!-- about section -->
+    <!-- About Section with Photo on Side -->
     <section class="section pt-0" id="about">
-        <!-- container -->
         <div class="container text-center">
-            <!-- about wrapper -->
             <div class="about">
+                <!-- Photo will appear on the left -->
                 <div class="about-img-holder">
-                    <img src="assets/imgs/your-photo.jpg" class="about-img" alt="[Your Name]">
-                </div>
+                    <img src="assets/imgs/kapel-photo.jpg" class="about-img rounded-circle" alt="Kapel Kharel" 
+                     style="width: 220px; height: 220px; object-fit: cover; border: 5px solid #f8f9fa;">
+            </div>
+                <!-- About content on the right -->
                 <div class="about-caption">
                     <p class="section-subtitle">Who Am I?</p>
                     <h2 class="section-title mb-3">About Me</h2>
                     <p>
-                        [Replace this with your actual bio. Write about your background, skills, 
-                        and what you're passionate about. Keep it professional but personal.]
+                        I'm a passionate data science student with a keen interest in transforming raw data into meaningful insights. 
+                        My journey in data science began with a curiosity about patterns and stories hidden within numbers, 
+                        and has grown into a full-fledged pursuit of knowledge in machine learning, statistical analysis, 
+                        and data visualization.
                     </p>
-                    <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+                    <p>
+                        I believe data tells stories that can drive decisions and create impact. 
+                        When I'm not crunching numbers, you can find me exploring new datasets, 
+                        contributing to open-source projects, or learning about the latest advancements in AI.
+                    </p>
+                    <a href="path/to/your-cv.pdf" class="btn-rounded btn btn-outline-primary mt-4" download>Download CV</a>
                 </div>
-            </div><!-- end of about wrapper -->
-        </div><!-- end of container -->
-    </section> <!-- end of about section -->
-
-    <!-- service section - customize with your skills -->
-    <section class="section" id="service">
-        <div class="container text-center">
-            <p class="section-subtitle">What I Do</p>
-            <h6 class="section-title mb-6">My Skills</h6>
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/pencil-case.svg" class="icon">
-                            <h6 class="title">Web Design</h6>
-                            <p class="subtitle">[Description of your web design skills and approach]</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/responsive.svg" class="icon">
-                            <h6 class="title">Frontend Development</h6>
-                            <p class="subtitle">[Description of your frontend development skills]</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/toolbox.svg" class="icon">
-                            <h6 class="title">UI/UX</h6>
-                            <p class="subtitle">[Description of your UI/UX skills]</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/analytics.svg" class="icon">
-                            <h6 class="title">Problem Solving</h6>
-                            <p class="subtitle">[Description of your problem-solving approach]</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end of row -->
+            </div>
         </div>
-    </section><!-- end of service section -->
+    </section>
 
-    <!-- portfolio section -->
+    <!-- Projects Section with GitHub Links -->
     <section class="section" id="portfolio">
         <div class="container text-center">
-            <p class="section-subtitle">My Work</p>
-            <h6 class="section-title mb-6">Portfolio</h6>
-            <!-- row -->
+            <p class="section-subtitle">My Data Journey</p>
+            <h6 class="section-title mb-6">Featured Projects</h6>
+            
             <div class="row">
+                <!-- Project 1 -->
                 <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img src="assets/imgs/project1.jpg" class="portfolio-card-img" alt="Project 1">
+                    <a href="https://github.com/kapelkharel/customer-churn-prediction" target="_blank" class="portfolio-card">
+                        <img src="assets/imgs/project1.jpg" class="portfolio-card-img" alt="Customer Churn Prediction">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>[Project Name 1]</h5>
-                                    <p class="font-weight-normal">[Brief description]</p>
+                                <h4>Customer Churn Prediction</h4>
+                                <p class="font-weight-normal">
+                                    Built with Python, Scikit-learn<br>
+                                    Predicts customer attrition using ML
+                                </p>
+                                <div class="github-link">
+                                    <i class="ti-github"></i> View on GitHub
+                                </div>
                             </span>
                         </span>
                     </a>
                 </div>
+                
+                <!-- Project 2 -->
                 <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/project2.jpg" class="img-responsive rounded" alt="Project 2">
+                    <a href="https://github.com/kapelkharel/covid-dashboard" target="_blank" class="portfolio-card">
+                        <img src="assets/imgs/project2.jpg" class="portfolio-card-img" alt="COVID-19 Dashboard">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>[Project Name 2]</h5>
-                                    <p class="font-weight-normal">[Brief description]</p>
+                                <h4>COVID-19 Dashboard</h4>
+                                <p class="font-weight-normal">
+                                    Interactive visualization<br>
+                                    Tableau, Python data processing
+                                </p>
+                                <div class="github-link">
+                                    <i class="ti-github"></i> View on GitHub
+                                </div>
                             </span>
                         </span>
                     </a>
                 </div>
+                
+                <!-- Project 3 -->
                 <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/project3.jpg" class="img-responsive rounded" alt="Project 3">
+                    <a href="https://github.com/kapelkharel/sentiment-analysis" target="_blank" class="portfolio-card">
+                        <img src="assets/imgs/project3.jpg" class="portfolio-card-img" alt="Sentiment Analysis">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>[Project Name 3]</h5>
-                                    <p class="font-weight-normal">[Brief description]</p>
+                                <h4>Sentiment Analysis</h4>
+                                <p class="font-weight-normal">
+                                    NLP project<br>
+                                    TensorFlow, NLTK
+                                </p>
+                                <div class="github-link">
+                                    <i class="ti-github"></i> View on GitHub
+                                </div>
                             </span>
                         </span>
                     </a>
                 </div>
-            </div><!-- end of row -->
-        </div><!-- end of container -->
-    </section> <!-- end of portfolio section -->
+            </div>
+            
+            <div class="mt-5">
+                <a href="https://github.com/kapelkharel" target="_blank" class="btn btn-primary">
+                    <i class="ti-github"></i> View All Projects on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
 
-    <!-- contact section -->
-    <section class="section" id="contact">
-        <div class="container text-center">
-            <p class="section-subtitle">Get In Touch</p>
-            <h6 class="section-title mb-5">Contact Me</h6>
-            <!-- contact form -->
-            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
-                <div class="form-row">
-                    <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email" requried>
-                    </div>
-                    <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6" class="form-control"
-                            placeholder="Your Message"></textarea>
-                    </div>
-                    <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
-                    </div>
-                </div>
-            </form><!-- end of contact form -->
-        </div><!-- end of container -->
-    </section><!-- end of contact section -->
-
-    <!-- footer -->
+    <!-- Rest of your sections (skills, contact, etc.) -->
+    
+    <!-- Footer -->
     <div class="container">
         <footer class="footer">
             <p class="mb-0">Copyright
-                <script>document.write(new Date().getFullYear())</script> &copy; <a href="#">[Your Name]</a>
+                <script>document.write(new Date().getFullYear())</script> &copy; <a href="#">Kapel Kharel</a>
             </p>
             <div class="social-links text-right m-auto ml-sm-auto">
-                <a href="[Your LinkedIn]" class="link"><i class="ti-linkedin"></i></a>
-                <a href="[Your GitHub]" class="link"><i class="ti-github"></i></a>
-                <a href="[Your Twitter]" class="link"><i class="ti-twitter-alt"></i></a>
-                <a href="[Your Email]" class="link"><i class="ti-email"></i></a>
+                <a href="https://linkedin.com/in/kapel-kharel" class="link"><i class="ti-linkedin"></i></a>
+                <a href="https://github.com/kapelkharel" class="link"><i class="ti-github"></i></a>
+                <a href="https://twitter.com/kapelkharel" class="link"><i class="ti-twitter-alt"></i></a>
+                <a href="mailto:kapel@example.com" class="link"><i class="ti-email"></i></a>
             </div>
         </footer>
-    </div> <!-- end of page footer -->
+    </div>
 
-    <!-- core  -->
+    <!-- Scripts -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap 3 affix -->
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
 
 </body>
